@@ -29,6 +29,10 @@ Usage
 
 ```
 
+Documentation
+=============
+Full documentation and usage examples will be available from [documentation site](http://nodoherty.github.io/cftextlocal/).  I will try to keep this updated as and when new functionality is added / updated.
+
 Tests
 =====
 Tests are implemented using [Testbox](http://wiki.coldbox.org/wiki/TestBox.cfm) the BDD (Behavior Driven Development) and Testing Framework.
