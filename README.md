@@ -3,9 +3,9 @@ cfTextlocal
 
 cfTextlocal is a ColdFusion markup language based wrapper for interacting with the Textlocal SMS and MMS API.
 
-With your own Textlocal account you can use this wrapper to easily integrate SMS and MMS services with your ColdFusion applications.
+With your own Textlocal account you can use this wrapper to easily integrate SMS and MMS services within your ColdFusion applications.
 
-Details of the Textlocal API can be found here: api.textlocal.com/docs
+Details of the Textlocal API can be found here: [api.textlocal.com/docs](api.textlocal.com/docs)
 
 Usage
 =====
@@ -24,7 +24,7 @@ Usage
 --->
 
 <!--- 
-  Handle the result 
+  Process the result 
 --->
 
 ```
