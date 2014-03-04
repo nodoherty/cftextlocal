@@ -1,48 +1,34 @@
-cfTextlocal
-===========
+cfTextlocal - Sample web application
+====================================
 
-cfTextlocal is a ColdFusion markup language based wrapper for interacting with the Textlocal SMS and MMS API.
+This sample application is designed to provide usage examples for each of the available 
+functions / features the API wrapper caters for.
 
-With your own Textlocal account you can use this wrapper to easily integrate SMS and MMS services with your ColdFusion applications.
+Requirements
+============
+This sample application requires:
+1. The cfTextlocal component available in a folder just outside the webroot "www" folder
+2. A mapping to the cfTextlocal API e.g. /cfTextlocal maps to "/com/cfTextlocal"
+3. Setup your site using Apache or IIS along with either ColdFusion or Railo
 
-Details of the Textlocal API can be found here: api.textlocal.com/docs
+Structure
+=========
+The application consists of the following directory structure:
 
-Usage
-=====
-
-```coldfusion
-<!--- 
-  Invoke the component constructor with constructor arguments 
---->
-cfTextlocal = createObject("component", "textlocal.TextLocalAPI").init(
-      username = this.username
-    , hash     = this.hash
-    , format   = this.defaultFormat
-);
-
-<!--- 
-  Call the API 
---->
-response = cfTextlocal.sendSms(
-      sender   = ""
-    , message  = ""
-    , username = ""
-    , hash     = ""
-    ...
-    ...
-);
-
-<!--- 
-  Handle the response within the API Wrapper
---->
-_translateErrorCode( errorDetails = response );
-
-<!--- 
-  Handle the result 
---->
-
-```
-
+/com
+    /textlocal
+        /cfTextlocal.cfc
+/www
+    /assets
+        /css
+            /cover.css
+        /js
+            /docs.min.js
+    /Application.cfc
+    /favicon.ico
+    /index.cfm
+    /README.md
+    
 Documentation
 =============
 Full documentation and usage examples will be available from [documentation site](http://nodoherty.github.io/cftextlocal/).  I will try to keep this updated as and when new functionality is added / updated.
