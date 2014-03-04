@@ -14,18 +14,28 @@ Usage
 <!--- 
   Invoke the component constructor with constructor arguments 
 --->
+cfTextlocal = createObject("component", "textlocal.TextLocalAPI").init(
+      username = #your_textlocal_username_email#
+    , hash     = #your_api_hash_key#
+    , format   = #xml_or_json_format#
+);
 
 <!--- 
   Call the API 
 --->
+response = cfTextlocal.sendSms(
+       sender   = ""
+     , message  = ""
+     , username = ""
+     , hash     = ""
+     ...
+     ...
+);
 
 <!--- 
-  Handle the response 
+  Handle the response within the API wrapper
 --->
-
-<!--- 
-  Process the result 
---->
+_translateErrorCode( errorDetails = response );
 
 ```
 
