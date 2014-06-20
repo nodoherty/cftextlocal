@@ -5,7 +5,7 @@ cfTextlocal is a ColdFusion markup language based wrapper for interacting with t
 
 With your own Textlocal account you can use this wrapper to easily integrate SMS and MMS services within your ColdFusion applications.
 
-Details of the Textlocal API can be found here: [api.textlocal.com/docs](api.textlocal.com/docs)
+Details of the Textlocal API can be found here: [api.textlocal.com/docs](http://api.textlocal.com/docs)
 
 Usage
 =====
@@ -41,7 +41,7 @@ _translateErrorCode( errorDetails = response );
 
 Documentation
 =============
-Full documentation and usage examples will be available from [documentation site](http://nodoherty.github.io/cftextlocal/).  I will try to keep this updated as and when new functionality is added / updated.
+Full documentation and usage examples will be available from the [documentation site](http://nodoherty.github.io/cftextlocal/) and [http://cftextlocal.readthedocs.org/en/latest/] here.  I will try to keep this updated as and when new functionality is added / updated.
 
 Tests
 =====
